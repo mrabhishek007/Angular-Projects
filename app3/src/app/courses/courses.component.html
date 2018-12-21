@@ -1,0 +1,136 @@
+<!--ng-if completely removes element from dom for false -->
+<!--hidden just hides element-->
+
+
+<div class="d-flex mx-5 justify-content-between text-center" xmlns="">
+
+  <!-- Approach 1 ( Old Approach )  -->
+  <div>
+    <h3>Approach1</h3>
+    <div class="list-group" *ngIf="courseList.length>0">
+      <h2 class="list-group-item  list-group-item-action active">List of courses</h2>
+      <div class="list-group-item list-group-item-action list-group-item-dark" *ngFor="let list of courseList">
+        {{list}}
+      </div>
+    </div>
+
+    <div *ngIf="courseList.length===0">No courses found</div>
+  </div>
+
+  <!-- Approach 2 -> Similar with new syntax (if else approach)  -->
+
+  <div class="ml-5">
+    <div *ngIf="courseList.length>0; then courseAvail  else noCourse"></div>
+    <ng-template #courseAvail>
+      <h3>Approach 2</h3>
+      <div class="list-group">
+        <h2 class="list-group-item  list-group-item-action active">List of courses</h2>
+        <div class="list-group-item list-group-item-action list-group-item-dark" *ngFor="let list of courseList">
+          {{list}}
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #noCourse>No courses found</ng-template>
+  </div>
+
+  <!--Approach 3 (Only hides the element)-->
+
+  <div class="ml-5">
+
+    <h3>Approach 3</h3>
+    <div [hidden]="courseList.length===0">
+      <div class="list-group">
+        <h2 class="list-group-item  list-group-item-action active">List of courses</h2>
+        <div class="list-group-item list-group-item-action list-group-item-dark" *ngFor="let list of courseList">
+          {{list}}
+        </div>
+      </div>
+    </div>
+    <div [hidden]="courseList.length>0">No courses found</div>
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div class=" row mt-5 ">
+
+    <!--  ng Switch-->
+    <div class="col-sm-6 col-md-3">
+
+      <h3>Switch Statement</h3>
+      <ul class="nav nav-pills ">
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="viewMode == 'map'" href="#" (click)="viewMode = 'map'">Map View</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="viewMode == 'list'" href="#" (click)="viewMode= 'list' ">List View</a>
+        </li>
+      </ul>
+      <div [ngSwitch]="viewMode">
+        <div *ngSwitchCase="'map'">Map List View</div>
+        <div *ngSwitchCase="'list'">List View</div>
+        <div *ngSwitchDefault>Other View</div>
+      </div>
+    </div>
+
+
+    <!--*ng for
+
+        $implicit: T: The value of the individual items in the iterable (ngForOf).
+        ngForOf: NgIterable<T>: The value of the iterable expression. Useful when the expression is more complex then a property access, for example when using the async pipe (userStreams | async).
+        index: number: The index of the current item in the iterable.
+        first: boolean: True when the item is the first item in the iterable.
+        last: boolean: True when the item is the last item in the iterable.
+        even: boolean: True when the item has an even index in the iterable.
+        odd: boolean: True when the item has an odd index in the iterable.
+
+        -->
+
+
+    <div class="col-sm-6 col-md-3">
+      <h3>*ngfor properties</h3>
+      <button class="btn btn-success" (click)="onAdd()">Add</button>
+      <ul>
+        <li *ngFor="let country of countryList ; index as i; even as isEven" id="list{{i}}" class="mb-1">
+          {{i }} : {{country.country}} <span *ngIf="isEven">(Even)</span>
+          <button class="btn btn-warning btn-sm ml-2 text-secondary" (click)="onRemove(country)">
+            <small>Remove</small>
+          </button>
+          <button class="btn btn-info btn-sm ml-2 " (click)="onChange(country)">
+            <small>Update</small>
+          </button>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="col-sm-6 col-md-3">
+
+      <h3>Safe Traversal Object</h3>
+      <!--If we wan't to avoid null, undefined then use save traversal -->
+
+      Name : {{person.name}}
+      Age : {{person.age}}
+      city : {{person.address?.city}};  <!--here we are checking '?' symbol if object is null or undefined -->
+      <!--Alternate-->
+      city 2 : <span *ngIf="person.address">{{person.address?.city}}</span>
+
+    </div>
+
+
+    <div class="col-sm-6 col-md-3">
+
+      <h3>Custom Directive</h3>
+
+      <!--here we applied custom-directive on input field-->
+      <input type="text"  appMycustomdirective  [caseType]="'uppercase'" > <!--here casetype is a custom input field(optional)-->
+
+    </div>
+
+  </div>
+
+</div>
+
+

@@ -1,0 +1,7 @@
+1. reusable component
+2. ngModel(2 way binding)
+3. One way binding
+4. pipes(uppercase, currency, date)
+5. Add bootstrap to project using @import on main css file
+6. event biding( click, keyup, keyup.enter etc ) with ($event)
+7. services (get data from service using single instance of service)

@@ -1,0 +1,16 @@
+1. Building Template form (We define forms control in the html template) [used ngModel]
+2. Building Reactive form (We define forms control logic in component instead of html template i.e. it is dynamic form ) [s]
+3. FormArray (Used to store array of values for an input field)
+4. Showing and handling specific errors  bases on input field
+5. Custom Validators, Showing errors based on async validations
+
+
+
+  /*   QUICK RECAPS ---------------
+
+      AbstractControl is the parent class for FormControl, FormGroup, FormArray
+  *
+  *     1. FormControl is used to store info. about an input field
+  *     2. FormGroup is used to group similar type of input field i.e FormControl
+  *     3. FormArray is used to store array of values of a input field ex. store courses as array when we press enter on an input field
+  * */

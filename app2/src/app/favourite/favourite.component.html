@@ -1,0 +1,37 @@
+<div>
+
+  <p>This is a favourite Component section</p>
+  <i
+    class="fa fa-3x"
+    [class.fa-star]="isFavourite"
+    [class.fa-star-o]="!isFavourite"
+    (click)="onClick()">
+  </i>
+
+
+  <!-- Instead of class binding we can directly use [ngClass] to perform above operation -->
+  <i
+    class="fa fa-3x"
+    [ngClass]="{
+      'fa-star': isFavourite,
+      'fa-star-o': !isFavourite
+    }"
+    (click)="onClick()">
+  </i>
+</div>
+
+<!-- [ngStyle] -->
+<div>
+  <button  
+  [ngStyle]="{
+    'backgroundColor': isSave ? 'green' : 'yellow',
+    'color': isSave ? 'white' : 'pink'
+  }">
+    ngStyle
+  </button>
+</div>
+
+
+
+
+

@@ -1,0 +1,5 @@
+1. class binding, style binding
+2. [ngCLass], [ngStyle]
+3. @Input() make a custom input property
+4. @Output() with EventEmitter() emit and subscribe to an event
+5. Reusable component (ng-container) add content to a markup dynamically

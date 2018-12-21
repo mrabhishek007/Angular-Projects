@@ -1,0 +1,76 @@
+
+<div class="row border-top text-secondary" >
+
+  <div class="col-md-6 order-1 order-md-0">
+    <!-- {{}} one way data binding  -->
+
+    <h2>{{'Title : ' + getTitle() }}</h2>
+
+    <p>List of Courses : </p>
+    <ul>
+      <li *ngFor="let list of myCourseList">
+        {{list}}
+      </li>
+    </ul>
+    <figure class="text-center text-uppercase  text-primary">
+      <img  src="{{imgUrl}}" width="300" height="300" alt="image"/>
+
+      <!--<img [src]=imgUrl width="300" height="300" alt="image" />  valid  -->
+
+      <figcaption>Random image</figcaption>
+    </figure>
+
+  </div>
+
+
+  <div class="col-md-6 order-0 order-md-1">
+
+
+
+    <h3>Event Handling </h3>
+
+    <input type="button" class="btn btn-primary" [class.active]="isActive" value="Bootstrap Button">
+    <!--class binding-->
+    <input type="button" [style.backgroundColor]="isActive ? 'lightgreen':'white'" value="Button 2">
+    <!--style binding--><br/>
+
+
+    <!--Event binding-->
+
+    <input type="button" value="clickevent" (click)="onSave($event)" class="btn btn-success my-2">  <!--onclick event-->
+
+    <input type="text" (keyup)="onKeyUp($event)"/> <!--onKeyUp event (when enter is clicked gives console output)  -->
+
+    <input type="email" #email (keyup.enter)="showVal(email.value)"/> <!--get input value when enter key is pressed-->
+
+    <h3>Two way Binding </h3>
+    <input type="text" [value]="myval1"  (keyup)="myval1 = $event.target.value; getVal()" > <!-- 1st way to create 2 way data binding  -->
+    <input type="text" [(ngModel)]="myval2"  (keyup)="getVal2()" > <!-- (Recommended) 2nd way to create 2 way data binding  -->
+    <br/>Message : <p class="alert-danger">  <small>{{myval2}} </small>   </p>
+
+      <!--End of event binding--> 
+
+
+    <!--  Pipes -->
+    <h3> Pipes Introduction </h3>
+    <br/>
+    <table class="table table-hover">
+      <tr>
+        <th>Title</th>
+        <th>price</th>
+        <th>Rating</th>
+        <th>Release Date</th>
+        <th>Students</th>
+      </tr>
+      <tr>
+        <td>{{course.title | uppercase}}</td> <!--uppercase pipe-->
+        <td>{{course.price | currency: 'INR' }}</td> <!--decimal pipe-->
+        <td>{{course.rating | number:'1.1-1' }}</td> <!--2 digit after decimal -->
+        <td>{{course.releaseDate | date:'fullDate'}}</td>
+        <td>{{course.students | number}}</td>
+      </tr>
+    </table>
+
+
+  </div>
+</div>

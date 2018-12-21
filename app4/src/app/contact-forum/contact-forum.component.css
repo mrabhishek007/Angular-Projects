@@ -1,0 +1,6 @@
+
+
+/*if error on forms angular automatically add .ng-invalid etc classes dynamically to the input field*/
+.form-control.ng-invalid.ng-touched{
+  border: 2px red solid;
+}

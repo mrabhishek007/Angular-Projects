@@ -1,0 +1,17 @@
+1.  ng new app-name  // generate new project
+2.  cd my-app
+3.  ng serve --open(open is option, direcly opens browser localhost)
+4.  ng generate component comp-name    // generate a component
+5.  ng generate service service-name   // generate a service
+
+
+
+Note : Don't use (_ 'underscore while creating a new project' ).Not works
+
+
+
+	// CREATE AN ANGULAR PROJECT OFFLINE
+
+	1. ng new myProject --skip-install=true
+	2. copy node modules of previous project
+	3. npm install

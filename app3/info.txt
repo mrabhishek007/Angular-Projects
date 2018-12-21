@@ -1,0 +1,4 @@
+ng directives --->>
+
+1. ng-if
+2. ngFor

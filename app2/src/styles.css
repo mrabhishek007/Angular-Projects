@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";  /*importing bootstrap*/
+@import "~font-awesome/css/font-awesome.min.css"; /*importing font awesome*/
+
+body{
+  padding: 1.5rem;
+}

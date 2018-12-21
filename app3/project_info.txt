@@ -1,0 +1,6 @@
+1. 1. *ng if
+2. 2. [hidden]
+3. 3. switch statment
+4. 4. *ng for with properties
+5. 5. safe traversal object (handling null || undefined object)
+6. 6. creating custom directives and practicle use with input field

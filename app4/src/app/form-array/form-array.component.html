@@ -1,0 +1,16 @@
+<div class="container">
+  <h3 class="font-weight-bold text-info">Form Array</h3>
+  <form>
+    <div class="form-group">
+      <label for="courses">Enter Courses and press enter </label>
+      <input id="courses" class="form-control" type="text" #topic (keyup.enter)="addTopic(topic)" >
+
+      <div class="list-group" >
+        <div class="list-group-item d-flex justify-content-between" *ngFor="let sub of getTopics().controls">{{sub.value}}
+          <button type="button" class="ml-2 btn btn-sm btn-danger" (click)="removeTopic(sub)"><small>Remove</small></button>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>

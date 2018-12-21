@@ -1,0 +1,69 @@
+<div class="container">
+  <h3 class="text-primary">Template Form</h3>
+
+  <!--by default angular applies ngForm directive in form here if not explicitly defined-->
+  <form #form="ngForm" (ngSubmit)="submitForm(form)">
+    <!--Using ngModel  in forms is only valid when it is used with a name property  -->
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input required
+             minlength="3"
+             maxlength="10"
+             pattern="vikash"
+             ngModel
+             name="firstName"
+             #firstName="ngModel"
+             (change)="onChange(firstName)" id="firstName" type="text" class="form-control ">
+
+      <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
+        <div *ngIf="firstName.errors.required">Name is invalid</div>
+        <div *ngIf="firstName.errors.minlength">Name should be min {{firstName.errors.minlength.requiredLength}}
+          character
+        </div>
+        <div *ngIf="firstName.errors.pattern">Name pattern is invalid</div>
+      </div>
+      <!--Above we are showing specific error messages bases on FormGroup object(#firstname) provided by angular
+         when the error occurs angular also dynamically add class like(ng-dirty) to that element so we can apply styles on that class to highlight the errors
+      -->
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      <textarea required ngModel minlength="10" name="comment" #cmt="ngModel" (change)="onChange(cmt)" id="comment"
+                cols="15" rows="6" class="form-control "></textarea>
+      <div class="alert alert-danger" *ngIf="cmt.touched && !cmt.valid">
+        <div *ngIf="cmt.errors.required">Comment is empty!</div>
+        <div *ngIf="cmt.errors.minlength">Length should be min {{cmt.errors.minlength.requiredLength}}
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="hobbieList">Select a Hobbie</label>
+        <select name="hobbie" required class="form-control" ngModel  id="hobbieList">
+          <option  *ngFor="let hobbie of hobbieList" [ngValue]="hobbie.hobbie">{{hobbie.hobbie}}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Select your Gender</label>
+        <div class="form-group">
+        <input required name="gender" ngModel type="radio" [value]=" 'Male' "> Male
+        <input required name="gender" ngModel type="radio" [value]="'Female'"> Female
+      </div>
+      </div>
+
+      <div class="form-group mt-2">
+        <input type="checkbox" ngModel name="isSubscribed">
+        <label class="ml-2">Subscribe to our mailing list...</label>
+      </div>
+
+      <p>{{form.value | json }} </p>
+
+      <div class="pt-2">
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+        <!--disabling if form is invalid-->
+        <button type="reset" class="btn btn-danger ml-2">Reset</button>
+      </div>
+    </div>
+  </form>
+</div>

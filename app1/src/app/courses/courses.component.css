@@ -1,0 +1,9 @@
+.topBorder{
+  border-top: 1px rgba(0, 0, 0, 0.64) solid;
+}
+
+input{
+  margin-left: 0.7rem;
+}
+
+

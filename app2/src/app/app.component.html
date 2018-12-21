@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!--Favourite Section-->
+
+
+<div class="row">
+
+  <div class="col-md-6">
+
+    <!--here 'isFavourite' is a input element which is made by us -->
+    <app-favourite [isFavourite]="post.isFavourite"  (change)="onFavouriteChanged($event)">
+
+    </app-favourite>
+
+  </div>
+
+  <div class="col-md-6">
+
+    <app-reusable>
+
+      <!--data added inside this will be rendered dynamically to reusable component -->
+
+      <!--<div class="heading">My Heading</div>-->  <!-- if you don't want any additional div use ng-container -->
+
+      <ng-container  class="heading" >Heading</ng-container>
+
+      <div class="body">
+        <h3>About Me</h3>
+        <p>This is Mr. Vikash</p>
+      </div>
+
+    </app-reusable>
+  </div>
+
+</div>
+
+
+
+
+
