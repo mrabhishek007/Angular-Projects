@@ -1,0 +1,2 @@
+1. Using Get, POST, PUT, DELETE, PATCH (Similar to put).
+2. Using Loaders on buttons and showing loader besides element.

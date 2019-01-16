@@ -1,0 +1,19 @@
+/*
+    Standard styles using css
+
+.list-group-item{
+  animation : animate 2s linear ;
+}
+
+@keyframes animate {
+  from{
+    background-color: lightseagreen;
+    opacity: 0;
+  }
+
+}*/
+
+
+.list-group-item{
+  cursor: pointer;
+}

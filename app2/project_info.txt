@@ -1,5 +1,5 @@
 1. class binding, style binding
-2. [ngCLass], [ngStyle]
-3. @Input() make a custom input property
-4. @Output() with EventEmitter() emit and subscribe to an event
+2. [ngClass], [ngStyle]
+3. @Input() make a custom input property (It is used to send data from parent to child components)
+4. @Output() with EventEmitter() emit and subscribe to an event (It is used to send data from child to parent components)
 5. Reusable component (ng-container) add content to a markup dynamically

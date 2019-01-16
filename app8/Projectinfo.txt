@@ -1,0 +1,21 @@
+Add firebase to Angular project :
+
+  1. npm install firebase angularfire2 --save
+
+  2. Follow "https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md" to setup Angular App with Firebase
+
+  3. Retrieving list from Realtime Database : (with key and without keys )
+      * If u want to perform some operation on the list of data then use "db.list('/Course').snapshotChanges()" bcz it also gives
+        array of object which contains 'key' its value etc & key is required to perform any operation on a object ( ex : updating a course for courselist)
+      * If u just want to show list of data then simply use "db.list('/Course').valueChanges()" it just gives array of values( without keys )
+
+
+  4. Uses of ngDestroy() to unsubscribe form Observable bcz firebase is realtime db it always checks for updates, so prevent memory
+      leaks while routing we need to unsubscribe the current observables to prevent memory leak
+
+                          OR
+
+          USE ASYNC PIPES WHICH WLL AUTOMATICALLY DO THE ABOVE TRICK (Even No need to subscribe manually))
+
+  5. async pipe - Automatically unsubscribe from observable when the component is destroyed (recommended)
+      EX : <div class="list-group-item" *ngFor="let course of $courseList | aync" >{{course}}</div> //automatically unsubscribe when component is destroyed

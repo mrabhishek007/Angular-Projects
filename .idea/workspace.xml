@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5b60db5-53d6-4a27-92f4-d615d5f4ee98" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app2/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/app2/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app2/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app2/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app2/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app2/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app2/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app2/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app2/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app2/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app2/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app2/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app2/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app2/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app3/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app3/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app3/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app3/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app3/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app3/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app3/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app3/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app3/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app3/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app3/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app3/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app4/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app4/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app4/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app4/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app4/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app4/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app4/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app4/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app4/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app4/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app4/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app4/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app4/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app5/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app5/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app5/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app5/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app5/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app5/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app6/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app6/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app6/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app6/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app6/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app6/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app6/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app6/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app6/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app6/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app6/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app6/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app6/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app6/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-structure/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/basic-structure/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-structure/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic-structure/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-structure/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/basic-structure/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-structure/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/basic-structure/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-structure/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/basic-structure/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-structure/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/basic-structure/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-structure/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/basic-structure/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="532096435">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="5" />
+          <entry key="html" value="8" />
+          <entry key="ico" value="1" />
+          <entry key="json" value="1" />
+          <entry key="ts" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="HTML" value="8" />
+          <entry key="Image" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="TypeScript" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="Angular2LanguageService" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="99" />
+          <entry key="html" value="1408" />
+          <entry key="ts" value="601" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="99" />
+          <entry key="HTML" value="1408" />
+          <entry key="TypeScript" value="601" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app1" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/intro-app/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/intro-app/src/index.html" />
+        <option value="$PROJECT_DIR$/intro-app/src/styles.css" />
+        <option value="$PROJECT_DIR$/intro-app/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/intro-app/src/app/courses/courses.component.css" />
+        <option value="$PROJECT_DIR$/intro-app/src/app/courses/courses.component.ts" />
+        <option value="$PROJECT_DIR$/intro-app/src/app/courses/courses.component.html" />
+        <option value="$PROJECT_DIR$/intro-app/src/app/app.module.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="angular-mosh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular-mosh" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.11.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="C:\Users\Vikash\Desktop\Web\angular-mosh\intro-app\node_modules\typescript\lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5b60db5-53d6-4a27-92f4-d615d5f4ee98" name="Default Changelist" comment="" />
+      <created>1545147340276</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545147340276</updated>
+      <workItem from="1545147341787" duration="9907000" />
+      <workItem from="1545398296382" duration="887000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10794000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22009254" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49966952" weight="0.35335195" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49834764" weight="0.0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4976867" weight="0.32960895" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50231326" side_tool="true" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.4970258" weight="0.32960895" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.3281879" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22009254" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49966952" weight="0.35335195" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49834764" weight="0.0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4976867" weight="0.32960895" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50231326" side_tool="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="TypeScript" order="11" sideWeight="0.4970258" weight="0.32960895" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.3281879" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/intro-app/src/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/app/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/intro-app/package.json" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/index.html" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/styles.css" />
+    <entry file="file://$PROJECT_DIR$/intro-app/node_modules/typescript/lib/lib.dom.d.ts" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/app/app.component.spec.ts" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/app/app.component.html" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/app/courses/courses.component.ts" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/app/courses/courses.service.ts" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/app/courses/courses.component.css" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/app/courses/courses.component.html" />
+    <entry file="file://$PROJECT_DIR$/intro-app/src/app/app.module.ts" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

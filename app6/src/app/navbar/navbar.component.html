@@ -1,0 +1,22 @@
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+  <li class="nav-item">
+    <!--must use 'routerLink' instead of href to implement single page application  otherwise whole page will reload-->
+    <!--queryParams property binding is used when we want to add query parameter(it is always optional no need to define in routing)  -->
+    <a class="nav-link" data-toggle="pill" role="tab"
+       routerLink="/followers"
+       routerLinkActive="active"
+       [queryParams]="{page:1, order: 'newest'}"
+       aria-controls="pills-home" aria-selected="true">Followers</a>
+  </li>
+
+  <!--routerLinkActive apply css class dynamically when that link route is active you can add multiple css classes separated with space-->
+  <li class="nav-item">
+    <a class="nav-link" role="tab" data-toggle="pill"
+       routerLink="/post"
+       routerLinkActive="active"
+       aria-controls="pills-profile" aria-selected="false">Posts</a>
+  </li>
+
+</ul>
+

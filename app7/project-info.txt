@@ -1,0 +1,35 @@
+        Authentication & Authorization
+
+        "Uses of 'CanActive' interface and AuthGuard"
+
+ 1.Restricting Access when user is not logged in using RouterGuard
+   Achieved using " canActivate: [AuthGuardService] " in route list
+
+ 2. Restricting Access when user is not admin and redirecting to No acess page
+     Also Achived using RouteGuard  "canActive :[ AuthGuardService, AdminAuthGuardService]"
+
+ 3. Using 'returnUrl' when user try to access the page when not logged In and pass query params to the login page , After successfull login directly redirect to the desired page instead of homepage
+     ex : Used in 'CanActive' this.Router.navigate(['/login'], {queryParams: {'returnUrl': state.url}});
+
+ 4. passing jwt token and retrieving and saving in local storage while making AJAX request.
+
+  getOrders() {
+
+    let headers = new Headers();
+    let token = localStorage.getItem('authToken');
+    headers.append('auth-token', token);
+    let options = new RequestOptions({headers: headers});
+
+    return this.http.get(this.baseUrl+'/order', options)
+      .pipe(map( res =>{
+        if(res.status==200){
+          return res.json();
+        }
+      }))
+      .subscribe(res =>{
+      }, error => {
+      });
+  }
+
+
+ 5. Using .pipe(map()).subscribe() instead of .subscribe() directly helpful if we want to perform some operation on result and then pass custom result and after handle the custom result.

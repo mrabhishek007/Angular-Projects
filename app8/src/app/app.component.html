@@ -1,0 +1,64 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h2 class="font-weight-light text-center">Retreive From Firebase (without keys)   </h2>
+
+<div class="container d-flex justify-content-between">
+
+  <section>
+    <h3 class="mb-3  font-weight-normal">Course List (Normal)</h3>
+    <div class="text-danger small" *ngIf="courseList.length==0">No courses found</div>
+    <div class="list-group ">
+      <div class="list-group-item" *ngFor="let course of courseList ; index as i">{{i+1}} . {{course}}</div>
+
+      <button class="btn btn-danger" (click)="ngOnDestroy()">Go Offline</button>
+      <!-- Unsubscribe form observable realtime changes will stop -->
+    </div>
+
+    <div class="card bg-secondary mt-4 text-white">
+      <div class="card-header">Retrieving Single Obj</div>
+      <div class="card-body">
+        <p>Course 1 : {{singleCourse}} </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!--Here no need to subscribe & unsubscribe observables just use async pipe in loop it will destroy the component automatically while routing to prevent memory leak-->
+    <h3 class="mb-3 text-secondary font-weight-normal">Course List (Using Async Pipes)</h3>
+    <div class="list-group ">
+      <div class="list-group-item" *ngFor="let course of courseList$ | async ; index as i">{{i+1}} . {{course}}</div>
+    </div>
+
+    <div class="card mt-4 text-white bg-secondary mx-auto" style="max-width: 20rem">
+      <div class="card-header">Retrieving Single Obj (Using Async Pipe)</div>
+      <div class="card-body">
+        <p>Course 1 : {{singleCourse$ | async | json}} </p>
+      </div>
+    </div>
+
+    <div class="card mt-4 text-white bg-secondary mx-auto" style="max-width: 20rem">
+      <div class="card-header">Retrieving Complex Obj (Using Async Pipe)</div>
+      <div class="card-body" *ngIf="author$ | async as author">
+        <p>Obj : {{author | json }}</p>
+        <p>Author : {{author.author}} </p>
+        <p>Course : {{author.course}} </p>
+        <p>Price : {{author.price}} </p>
+        <p>IsPremium : {{author.isPremium}} </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<section>
+  <app-add></app-add>
+</section>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+1. Routing And Navigation
+
+2. Use routerLink directive instead of href(href will load the whole page) EX : ,<a routerLink = "/profile" >
+
+3. Use [rounterLink] property binding syntax when dealing with route parameters which accepts array as parameters ink]="[]"
+     EX :  <a [routerLink] = "['followers', follower.id]" >
+
+4. 'routerLinkActive : css classes list (separated by space)' used to add external css to an element to tell the element is active
+ex: <a  routerLinkActive: "active" makes a nav bar active when  nav tab specific route is clicked  >
+i.e. it dynamically apply css class to an element when it is active
+
+5. Router : It is a service by angular
+   In order to navigate user programmatically and add query parm & add query string dynamically we need 'Router' service
+
+6. ActivatedRoute: Service provide by angular
+     In order to get access to route parameters we have to inject or use 'ActiveRoute' Class provided by Angular
+     Routing with snapshot(used when we work on same page routing. ex: transition page with back and next button )  and observables(used when data is reloaded again on the samepage ex: open different user profile on the same page )

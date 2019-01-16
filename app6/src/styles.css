@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";  /*importing bootstrap*/
+@import "css_loaders/loading.css";
+@import "css_loaders/loading-btn.css";
+body{
+  padding: 1.5rem;
+}
+
+*{
+  box-sizing: border-box !important;
+}
+

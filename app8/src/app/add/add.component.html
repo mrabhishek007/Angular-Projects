@@ -1,0 +1,35 @@
+<h2 class="font-weight-light text-center my-3">CURD with Firebase and retrieve data with keys </h2>
+
+<div class="container">
+
+  <div class="form-group">
+    <label class="text-success">Add Course</label>
+    <input type="text" class="form-control" #course (keyup.enter)="add(course)">
+  </div>
+  <div class="list-group">
+    <div class="list-group-item " *ngFor="let course of courseList$  | async ; index as i">
+
+      <div class="d-flex justify-content-between" #divParent>
+        <!--making invisible and showing input text when click on update-->
+        <label>{{i+1}} : {{ course.payload.val().name || course.payload.val() }}</label>
+
+        <div>
+          <button class="btn btn-sm btn-info" (click)="showInputText(divParent, newValue)">
+            <small>Update</small>
+          </button>
+
+          <button (click)="delete(course)" class="btn btn-sm btn-danger mx-2">
+            <small>Delete</small>
+          </button>
+        </div>
+
+      </div>
+
+      <input style="display: none" type="text" class="form-control" #newValue [value]="course.payload.val()"
+             (keyup.enter)="update(course, newValue, divParent)">
+
+    </div>
+    <!--when complex obj then course.name will give course name ( In firebase list) when simple obj corse will give course name -->
+  </div>
+
+</div>

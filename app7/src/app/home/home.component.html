@@ -1,0 +1,6 @@
+<div *ngIf="AuthService.isLoggedIn()" class="display-4 mb-4">Welcome {{AuthService.getUser().name}}</div>
+
+<ul>
+  <li *ngIf="AuthService.getUser().admin"><a routerLink="/admin">Admin</a></li>
+  <li ><a (click)="AuthService.logout() " class="text-primary" style="cursor: pointer"> Logout</a></li>
+</ul>

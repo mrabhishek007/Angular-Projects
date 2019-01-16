@@ -1,0 +1,78 @@
+<div class="container-fluid">
+
+  <div class="row justify-content-between">
+
+
+    <!--       FADE IN FADE OUT ANIMATION       -->
+    <div class="col-md-6 animated bounce slow"> <!--using animate.css library to add bounce animation-->
+      <h3 class="font-weight-normal" >Todos</h3>
+      <input type="text" (keyup.enter)="add(todo)" #todo class="form-control">
+      <div class="list-group">
+        <!-- @fade is animation name   -->
+        <div
+          @fade
+          class="list-group-item"
+          *ngFor="let item of list.reverse() ; index as i"
+          (dblclick)="remove(item)">
+          {{i+1}}. {{item}}
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--       Bounce Left with fade in custom Animation       -->
+    <div class="col-md-6">
+      <h3 class="font-weight-normal">Todos(Bounce left Custom Animation)</h3>
+      <input type="text" (keyup.enter)="add(todo)" #todo class="form-control">
+      <div class="list-group">
+        <!-- @bounceLeftCustom is animation name which is a custom animation(mixture of 2 animation) -->
+        <div
+          @bounceLeftCustom
+          class="list-group-item"
+          *ngFor="let item of list.reverse() ; index as i"
+          (dblclick)="remove(item)">
+          {{i+1}}. {{item}}
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--       SWIPE LEFT ANIMATION WITH TRANSITION DELAY       -->
+    <div class="col-md-6">
+      <h3 class="font-weight-normal my-3">Todos(Double click to swipe left)</h3>
+      <input type="text" (keyup.enter)="add(todo)" #todo class="form-control">
+      <div class="list-group">
+        <!-- @swipeLeft is animation name   -->
+        <div
+          @swipeLeft
+          class="list-group-item"
+          *ngFor="let item of list.reverse() ; index as i"
+          (dblclick)="remove(item)">
+          {{i+1}}. {{item}}
+        </div>
+      </div>
+    </div>
+
+    <!--       BOUNCE LEFT ANIMATION WITH KEY FRAME       -->
+    <div class="col-md-6">
+      <h3 class="font-weight-normal my-3">Todos(Bounce-left animation with key-frame)</h3>
+      <input type="text" (keyup.enter)="add(todo)" #todo class="form-control">
+      <div class="list-group">
+        <!-- @bounceLeft is animation name   -->
+        <div
+          @bounceLeft
+          class="list-group-item"
+          *ngFor="let item of list.reverse() ; index as i"
+          (dblclick)="remove(item)">
+          {{i+1}}. {{item}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

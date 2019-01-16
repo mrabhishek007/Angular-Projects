@@ -1,0 +1,26 @@
+<div class="container">
+  <h3 class="font-weight-normal text-primary mb-2">Login Page</h3>
+
+  <div *ngIf="isInvalid" class="alert alert-danger" >
+    UserName or Password is invalid !
+  </div>
+
+  <form #form="ngForm" (ngSubmit)="submitForm(form)" >
+
+    <div class="form-group">
+      <label for="userName">UserName</label>
+      <input class="form-control" type="text" name="userName" ngModel #userName="ngModel" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input class="form-control" type="text" name="password" ngModel #password="ngModel" required>
+    </div>
+
+    <div>
+      <button class="btn btn-primary mr-2" type="submit" [disabled]="form.invalid">Login</button>
+      <button class="btn btn-danger" type="reset">Reset</button>
+    </div>
+
+  </form>
+</div>

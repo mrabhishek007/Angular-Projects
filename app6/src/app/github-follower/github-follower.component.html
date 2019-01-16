@@ -1,0 +1,12 @@
+<div class="d-flex flex-column">
+  <div *ngFor="let follower of followers" class="media my-3 p-2 w-50 align-self-auto rounded">
+    <img src="{{ follower.avatar_url }}" alt="profileimage">
+    <div class="ml-5">
+      <h4 class="font-weight-bold">
+        <!--when dealing with dynamic url use [routerlink] property binding syntax and pass route parameters in the array-->
+        <a [routerLink]="['/followers', follower.id, follower.login, follower.avatar_url]">{{ follower.login }}</a>
+      </h4>
+      <a target="_blank"   href="{{ follower.html_url }}">{{ follower.html_url }}</a>
+    </div>
+  </div>
+</div>

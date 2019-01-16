@@ -1,0 +1,6 @@
+                ANGULAR ANIMATIONS
+
+step 1 . Open 'polyfills.ts'  then Go to line 54 and uncomment 'import 'web-animations-js' (required to support older browser)
+step 2 .  npm install  web-animations-js --save
+
+

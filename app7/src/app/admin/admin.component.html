@@ -1,0 +1,10 @@
+<div class="container">
+  <h2 class="text-secondary font-weight-normal">Admin Page</h2>
+
+  <h3 class="font-weight-normal text-primary">My Orders</h3>
+  <div *ngIf="orderList.length==0" class="text-danger">No Order Found</div>
+
+  <div class="list-group mt-2">
+    <div class="list-group-item" *ngFor=" let order of orderList  ;index as i">Order {{ i}} => {{order}}</div>
+  </div>
+</div>
