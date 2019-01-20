@@ -1,0 +1,16 @@
+                    ANGULAR MATERIAL DESIGN
+
+1.  npm install @angular/material @angular/cdk @angular/animations hammerjs  --save
+     @import "~@angular/material/prebuilt-themes/indigo-pink.css" in styles.css
+
+
+2. Adding checkbox EX : <mat-checkbox> Check me </mat-checkbox> Similarly input, RadioButton, ProgressBar, DropDownlist(Select) etc can be added.
+   Note : Every element needs to import it's own module to have access to it. So kindly add respected 'Module' in app.module.ts first then use the element
+
+
+3. Adding material design Icons
+   step 1 : Add @import "https://fonts.googleapis.com/icon?family=Material+Icons"; in main css file
+   step 2 : Add 'MatIconModule' as imports in app.module.ts
+   step 3 : Go to "https://material.io/tools/icons/?style=baseline"  and get the icon name and use it like following :
+             EX :  <mat-icon>add_shopping_cart</mat-icon>   gives shopping cart icon
+

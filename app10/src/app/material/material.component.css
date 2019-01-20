@@ -1,0 +1,19 @@
+/*  also valid to make an element center (make sure to apply this class on children and set parent position relative ) but better use flex
+ .contentsInCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+*/
+
+
+.contentsInCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-icon.add_shopping_cart{
+  color: green;
+}

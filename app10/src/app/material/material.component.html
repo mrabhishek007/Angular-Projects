@@ -1,0 +1,176 @@
+<div class=" row">
+
+  <!-- CheckBoxes -->
+  <div class="col-md-4 border pb-4">
+    <h3 class="font-weight-light text-secondary my-2"> CheckBoxes </h3>
+    <mat-checkbox
+      #myCheckBox
+      [checked]="isChecked"
+      [value]=2
+      (change)="onChanged($event)"
+    >Subscribe me
+    </mat-checkbox>
+
+    <div *ngIf="myCheckBox.checked" @fade class="border p-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere in inventore libero necessitatibus quod, sequi
+      velit. Aliquid autem doloremque est harum illum iste odit omnis quis! Accusamus assumenda commodi consequatur
+      doloremque. Corporis delectus earum explicabo labore maxime nobis temporibus vitae.
+    </div>
+
+    <br>
+    <input type="checkbox"
+           checked
+           value="2"
+    />Basic Html Checkbox
+  </div>
+
+  <!--Radio Buttons-->
+  <div class="col-md-4 border" style="display: flex; align-items: center; justify-content: center">
+    <!--Also making content in center-->
+    <div>
+      <h3 class="font-weight-light text-secondary mb-4"> Radio Buttons </h3>
+      <mat-radio-group class="ml-2" [(ngModel)]="gender"> <!--gender = 'female' so female radio btn will be checked-->
+        <mat-radio-button value="Male">Male</mat-radio-button>
+        <!--we can use property binding or simple value attribute-->
+        <mat-radio-button class="ml-3" [checked]="isChecked" [value]="choice2">Female</mat-radio-button>
+      </mat-radio-group>
+      <p>You are a <strong>{{gender}}</strong></p>
+    </div>
+  </div>
+
+  <!--Also making content inside div in center-->
+  <!-- 1. Give position : relative to parent 2. apply top,left 50% & translatex,y = -50%  to make any div center-->
+  <div class="col-md-4 border contentsInCenter">
+    <h3 class="font-weight-light text-secondary mb-4 "> ProgressBar </h3><br/>
+    <mat-progress-spinner
+      mode="indeterminate"
+      color="accent"
+    ></mat-progress-spinner>
+  </div>
+
+  <!--Drop down list-->
+  <div class="col-md-4 border">
+    <div>
+      <h3 class="font-weight-light text-secondary mb-4 "> Drop Down List(Selects) </h3><br/>
+      <mat-select placeholder="Favourite Color" [(ngModel)]="selectedColor">
+        <mat-option *ngFor="let color of colorList" [value]="color.id">{{color.name}}</mat-option>
+      </mat-select>
+      <div class=" lead my-3">Selected Color value is <strong> {{selectedColor}} </strong></div>
+    </div>
+  </div>
+
+  <!-- Inputs -->
+  <div class="col-md-4 border ">
+    <div>
+      <h3 class="font-weight-light text-secondary mb-4 "> input </h3><br/>
+      <mat-form-field>
+        <input matInput placeholder="Username" required name="userName" ngModel #userName="ngModel">
+        <mat-hint>Type a unique username.</mat-hint>
+        <span matPrefix>@admin  </span>
+        <span matSuffix>gmail.com</span>
+        <mat-error *ngIf="userName.invalid && userName.errors.required">The username is <strong> required </strong>
+        </mat-error>
+      </mat-form-field>
+      <p class="mt-3">your Username is {{userName.value}}</p>
+
+    </div>
+  </div>
+
+
+  <!--AutoResizable Text Area -->
+  <div class="col-md-4 border" style="display: flex; flex-direction: column">
+    <h3 class="font-weight-light text-secondary mb-4 "> Text Area </h3><br/>
+    <mat-form-field>
+      <mat-label>About Yourself</mat-label>
+      <textarea matInput
+                matTextareaAutosize
+                required name="aboutYou"
+                rows="2"
+                ngModel #aboutYou="ngModel"></textarea>
+      <mat-hint>Write About Yourself</mat-hint>
+    </mat-form-field>
+    <p class="mt-3">your have written <strong>{{aboutYou.value}}</strong></p>
+  </div>
+
+
+  <!-- Date Picker -->
+  <div class="col-md-4 border" style="display: flex; flex-direction: column">
+    <h3 class="font-weight-light text-secondary mb-4 "> Date Picker </h3><br/>
+    <mat-form-field>
+      <input type="text"
+             (focus)='myDatePicker.open()'
+             matInput
+             [min]="minDate"
+             [max]="maxDate"
+             [value]="minDate"
+             (dateChange)="onDateChanged($event)"
+             [matDatepicker]="myDatePicker"
+             placeholder="choose a date">
+      <mat-datepicker-toggle matSuffix [for]="myDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #myDatePicker color="accent"></mat-datepicker>
+    </mat-form-field>
+    <p class="mt-3">The date is <strong>{{selectedDate}}</strong></p>
+  </div>
+
+
+  <!--Material Icons -->
+  <div class="col-md-4 border">
+    <h3 class="font-weight-light text-secondary mb-4 "> Material icons </h3><br/>
+    <mat-icon class="add_shopping_cart">add_shopping_cart</mat-icon>
+    Add to cart with color
+    <br/><br/><br/>
+    <mat-icon>signal_wifi_4_bar</mat-icon>
+    Wifi SIgnal
+  </div>
+
+  <!-- Buttons -->
+  <div class="col-md-4 border">
+
+    <h3 class="font-weight-light text-secondary mb-2 "> Buttons </h3><br/>
+
+    <div class="border">
+      <h4 class="font-weight-normal lead">Basic Buttons</h4>
+      <button mat-button>Basic</button>
+      <button mat-button color="primary">Primary</button>
+      <button mat-button color="accent">Accent</button>
+      <button mat-button color="warn">Warn</button>
+      <button mat-button disabled>Disabled</button>
+      <a mat-button routerLink=".">Link</a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 border">
+        <p class="font-weight-normal lead">Raised Buttons</p>
+        <button mat-raised-button>Basic</button>
+        <button mat-raised-button color="primary">Primary</button>
+      </div>
+
+      <div class="col-md-4 border">
+        <h4 class="font-weight-normal lead">Stroked Buttons</h4>
+        <button mat-stroked-button color="primary">Primary</button>
+        <a mat-stroked-button routerLink=".">Link</a>
+      </div>
+
+      <div class="col-md-4 border">
+        <h4 class="font-weight-normal lead">Flat Buttons</h4>
+        <button mat-flat-button color="accent">Accent</button>
+      </div>
+
+      <div class="col-md-4 border">
+        <h4 class="font-weight-normal lead">Icon Buttons</h4>
+        <button mat-icon-button color="primary">
+          <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+      </div>
+
+      <div class="col-md-4 border">
+        <h4 class="font-weight-normal lead">Fab Buttons</h4>
+        <button mat-fab color="accent">
+          <mat-icon>check</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+</div>

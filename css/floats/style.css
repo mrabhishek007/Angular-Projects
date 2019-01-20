@@ -1,0 +1,85 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    /*border: 1px solid #4f4f4f;*/
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.container img {
+    float: left;
+    /*float: right;*/
+    margin: 5px;
+}
+
+/* Best way to clear the float to add a empty content Dynamically and clear the float. If we don't clear float margin top will not work bcz the element is removed from the normal document flow */
+.newspaper,.image_para_container:after,.square_container:after, .service_container:after{
+    content: '';
+    clear: both;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}
+
+.green{
+    float: left;
+    background-color: forestgreen;
+}
+.red{
+    background-color: orangered;
+    float: left;
+}
+.yellow{
+    background-color: yellowgreen;
+    float: left;
+}
+
+.service{
+    text-align: center;
+    float: left;
+    border: 1px solid teal;
+    width: 31.3333333%;
+    margin: 1%;
+    padding: 1% 0;
+    box-shadow: 2px 2px 5px  teal;
+
+    /*Box sizing = border box ; width of 3 service = (31.3 + 1*2 ) *3 = 99.999% */
+
+}
+
+.service p, .service h3  {
+    color: teal;
+}
+
+
+.news_content{
+    float: left;
+    width: 48%;
+    margin: 1% 1% ;
+    border: 1px solid lightslategrey;
+    padding: 2%;
+}
+
+.top_news{
+    background: url("https://source.unsplash.com/random/100*80") no-repeat  ;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    color: white;
+    padding: 2%;
+}
+
+

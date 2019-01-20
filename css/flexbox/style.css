@@ -1,0 +1,70 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*   Container when flex-direction is row*/
+
+h2{
+    text-align: center;
+    font-weight: lighter;
+    color: darkcyan;
+}
+
+.container{
+    height: 30vh;
+    border: 2px solid yellow;
+    display: flex;
+    background-color: lightskyblue;
+    flex-direction: row;  /*default is row even we don't mention flex direction*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container > div{
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    /*  it will consume whole width*/
+    /*flex: 1;*/
+}
+
+.container > div:nth-child(1){
+    align-self: flex-start; /* align flex content at top along y axis */
+    background-color: lightseagreen;
+}
+.container > div:nth-child(2){
+    background-color: orangered;
+}
+.container > div:nth-child(3){
+    align-self: flex-end;
+    background-color: lightpink;
+}
+
+/*Container when flex direction is column */
+.containercolumn{
+    margin-top: 2rem;
+    height: 30vh;
+    border: 2px solid yellow;
+    display: flex;
+    background-color: lightslategray;
+    flex-direction: column;  /*default is row even we don't mention flex direction*/
+    justify-content: center; /*center the element vertically bcz flex direction is col*/
+    align-items: flex-end; /*element take only required width not 100% width of the browser*/
+}
+
+.containercolumn > div{
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.containercolumn > div:nth-child(1){
+    background-color: lightseagreen;
+}
+.containercolumn > div:nth-child(2){
+    background-color: orangered;
+    order: 1; /*default is 0 so it will be on last*/
+}
+.containercolumn > div:nth-child(3){
+    background-color: lightpink;
+}

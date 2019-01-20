@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h3{
+    margin: 8px  0 30px 0;
+    font-weight: bold;
+    color: teal;
+}
+
+/*   AutoFit & Min-max   */
+
+.container-2{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr))  ;  /*when using auto-fit 1fr means that an element will take whole row*/
+    grid-auto-rows: 100px; /*all rows will be created implicitly with a height of 200px */
+    grid-gap: 0.2rem;
+}
+
+.box:nth-child(odd){
+    background-color: teal;
+}
+.box:nth-child(even){
+    background-color: dodgerblue;
+}
+
+
+
+
+
+
+
+
+/*   Positioning with css grid (grid-area)   */
+
+.container{
+    height: 35vh;
+    display: grid;
+    grid-gap: 3px  ;
+    grid: 60px auto 60px / repeat(12, 1fr);
+    grid-template-areas:
+            ". n n n n n n n n n n ."
+            "s c c c c c c c c c c c"
+            ". f f f f f f f f f f ." ;
+    /* representation of the actual structure (here row=3, col=12) where n= navbar, s=sidebar, c=content, f=footer , . = blank space*/
+
+}
+
+.navbar{
+    grid-area: n;
+}
+
+.sidebar{
+    grid-area: s;
+}
+
+.content{
+    grid-area: c;
+}
+
+.footer{
+    grid-area: f;
+}
+
+
+body > div > div {
+    color: white;
+}
+
+
+.container  > div:nth-child(1) {
+    background-color: darkslategrey;
+}
+
+.container  > div:nth-child(2) {
+    background-color: darkcyan;
+}
+
+.container  > div:nth-child(3) {
+    background-color: orangered;
+}
+
+.container  > div:nth-child(4) {
+    background-color: yellow;
+}
+
+.container  > div:nth-child(5) {
+    background-color: lightseagreen;
+}
+
+.container  > div:nth-child(6) {
+    background-color: sandybrown;
+}

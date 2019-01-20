@@ -1,0 +1,106 @@
+* {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+    font-weight: 700;
+}
+
+.container {
+    display: grid;
+
+    /*  Valid way 1 (using pixels)
+
+    grid-template-columns: 300px auto 150px  ; !* Here 3 columns where 2nd column is responsive we can give as many columns we want*!
+    grid-template-rows: 150px 100px; !*1st row height = 150px ; 2nd row height = 100px*!
+
+    */
+
+    /* Way 2 - using fraction */
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    /*grid-template-rows: repeat(2, 100px); !* also valid EX : make 2 row with each 100px *!*/
+
+    /*shorthand property for above*/
+    grid: repeat(2, 100px) / 1fr 2fr 1fr;
+
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    /* Shorthand for above property   */
+    grid-gap: 2px;
+}
+
+.container-2 {
+    display: grid;
+    grid-gap: 3px;
+    grid: 80px 250px 80px /repeat(12, 1fr); /* shorthand property for defining rows & cols in defined in container 1  */
+}
+
+/*  Container 2 divs */
+
+h4 {
+    margin: 15px;
+    text-transform: uppercase;
+    color: grey;
+    text-align: center;
+}
+
+.container-2 > div:nth-child(1) {
+    /*
+          grid-column-start: 1;     starts at 1
+          grid-column-end: 3;         ends at 3
+    */
+    grid-column: 3 /-1; /*shorhand for above property*/
+}
+
+.container-2 > div:nth-child(2) {
+    grid-column: 1/3; /*takes 2 col because starts at 1 ends at 3*/
+    grid-row: 1/3; /*starts for 1st row & ends on 2nd row*/
+}
+
+.container-2 > div:nth-child(3) {
+    grid-column: 3/-1; /*takes 10 columns bcz starts at 3 ends at 12*/
+}
+
+.container-2 > div:nth-child(4) {
+    grid-column: 1 /-1; /*use -1 if u want to take full row (helpful when no of columns is unknown)  */
+}
+
+/*  Container divs */
+
+body > div > div {
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+body > div > div:nth-child(1) {
+    background-color: darkslategrey;
+}
+
+body > div > div:nth-child(2) {
+    background-color: darkcyan;
+}
+
+body > div > div:nth-child(3) {
+    background-color: orangered;
+}
+
+body > div > div:nth-child(4) {
+    background-color: yellow;
+}
+
+body > div > div:nth-child(5) {
+    background-color: lightseagreen;
+}
+
+body > div > div:nth-child(6) {
+    background-color: sandybrown;
+}
+
+.container > div > *, .container-2 > div > div {
+    /* positioning contents to center */
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
